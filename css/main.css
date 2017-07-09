@@ -251,3 +251,76 @@ header {
 .more:hover {
 	border: 6px solid rgba(155, 89, 182, .5);
 }
+
+.contact {
+	width: 768px;
+	margin: 0 auto;
+}
+.contact h1 {
+	margin: 75px 0;
+	font: normal 60px 'Rokkitt', serif;
+	color: #9b59b6;
+	text-align: center;
+}
+
+input, textarea {
+	display: block;
+	width: 309px; height: 13px;
+	padding: 30px;
+	font: normal 30px 'Rokkitt', serif;
+	color: #cecece;
+	background-color: #e4e8e8;
+	border: none;
+	outline: none;
+}
+input:focus, textarea:focus {
+	box-shadow: 5px 5px 5px #9b59b6, -5px -5px 5px #9b59b6;;
+}
+.input_text {
+	float: left;
+	margin: 0 30px 30px 0;
+}
+textarea {
+	display: block;
+	width: 708px; height: 250px;
+	resize: none;
+}
+
+footer {
+	margin-top: 150px;
+	background-color: #9b59b6;
+}
+.social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 768px;
+	position: relative;
+	top: -30px;
+	margin: 0 auto;
+}
+.social--item1, .social--item2, .social--item3 {
+	width: 100px; height: 100px;
+	background: url(../img/sprite.png) -220px 0;
+}
+.social--item2 {
+	background-position: -110px -100px;
+}
+.social--item3 {
+	background-position: -220px -100px;
+}
+.rights {
+	width: 960px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	font: normal 24px 'Rokkitt', serif;
+	color: #fff;
+}
