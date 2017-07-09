@@ -150,3 +150,104 @@ header {
 	text-align: justify;
 	line-height: 29px;
 }
+
+.portfolio {
+	width: 960px;
+	margin: 75px auto;
+}
+
+.img_pair {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 55px;
+}
+.img--item {
+	position: relative;
+	width: 400px; height: 300px;
+	overflow: hidden;
+	opacity: .5;
+	transition: .3s ease-in-out;
+}
+.img--item:hover {
+	opacity: 1;
+}
+.img--item1 {
+	background: url(../img/photo1.jpg);
+}
+.img--item2 {
+	background: url(../img/photo2.jpg);
+}
+.img--item3 {
+	background: url(../img/photo3.jpg);
+}
+.img--item4 {
+	background: url(../img/photo4.jpg);
+}
+
+.search {
+	position: absolute;
+	top: -120px; right: 20px;
+	display: none;
+	width: 52px; height: 52px;
+	background: #9b59b6 url(../img/sprite.png) 12px -66px no-repeat;
+	border: 6px solid rgba(155, 89, 182, .5);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.search:hover {
+	border: 6px solid rgba(155, 89, 182, .8);
+	cursor: pointer;
+}
+.img--item:hover .search {
+	display: block;
+	top: 20px;
+}
+
+.img_description {
+	position: absolute;
+	display: none;
+	bottom: -100px;
+	width: 400px; height: 96px;
+	background-color: #9b59b6;
+	border-top: 6px solid rgba(155, 89, 182, .5);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	transition: bottom 3s ease-out;
+}
+.img--item:hover .img_description {
+	display: block;
+	bottom: 0;
+}
+
+.img_description h3 {
+	font: normal 30px 'Rokkitt', serif;
+	color: #fff;
+	margin: 25px 0 0 20px;
+}
+.img_description p {
+	font: 15px 'Raleway', sans-serif;
+	color: #6b3f7d;
+	margin: 0 0 0 20px;
+}
+
+.more {
+	display: block;
+	width: 232px; height: 67px;
+	margin: 75px auto 0;
+	padding-left: 20px;
+	background: #9b59b6 url(../img/sprite.png) 170px -105px no-repeat;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 6px solid transparent;
+	font: normal 24px 'Rokkitt', serif;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	cursor: pointer;
+}
+.more:hover {
+	border: 6px solid rgba(155, 89, 182, .5);
+}
