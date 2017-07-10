@@ -148,7 +148,6 @@ header {
 	font-size: 15px;
 	width: 250px;
 	text-align: justify;
-	line-height: 29px;
 }
 
 .portfolio {
@@ -185,40 +184,37 @@ header {
 }
 
 .search {
-	position: absolute;
-	top: -120px; right: 20px;
-	display: none;
+	position: relative;
+	top: -80px; right: -330px;
 	width: 52px; height: 52px;
 	background: #9b59b6 url(../img/sprite.png) 12px -66px no-repeat;
 	border: 6px solid rgba(155, 89, 182, .5);
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding-box;
 	background-clip: padding-box;
+	transition: top .3s ease-out;
 }
 .search:hover {
 	border: 6px solid rgba(155, 89, 182, .8);
 	cursor: pointer;
 }
 .img--item:hover .search {
-	display: block;
-	top: 20px;
+	top: 20px; right: -330px;
 }
 
 .img_description {
-	position: absolute;
-	display: none;
-	bottom: -100px;
+	position: relative;
+	bottom: -300px;
 	width: 400px; height: 96px;
 	background-color: #9b59b6;
 	border-top: 6px solid rgba(155, 89, 182, .5);
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding-box;
 	background-clip: padding-box;
-	transition: bottom 3s ease-out;
+	transition: bottom .3s ease-out;
 }
 .img--item:hover .img_description {
-	display: block;
-	bottom: 0;
+	bottom: -146px;
 }
 
 .img_description h3 {
@@ -264,7 +260,6 @@ header {
 }
 
 input, textarea {
-	display: block;
 	width: 309px; height: 13px;
 	padding: 30px;
 	font: normal 30px 'Rokkitt', serif;
@@ -273,15 +268,17 @@ input, textarea {
 	border: none;
 	outline: none;
 }
+input::placeholder, textarea::placeholder {
+	color: #cecece;
+}
 input:focus, textarea:focus {
 	box-shadow: 5px 5px 5px #9b59b6, -5px -5px 5px #9b59b6;;
 }
-.input_text {
+input[type="text"] {
 	float: left;
 	margin: 0 30px 30px 0;
 }
 textarea {
-	display: block;
 	width: 708px; height: 250px;
 	resize: none;
 }
@@ -307,11 +304,12 @@ footer {
 	background: url(../img/sprite.png) -220px 0;
 }
 .social--item2 {
-	background-position: -110px -100px;
-}
-.social--item3 {
 	background-position: -220px -100px;
 }
+.social--item3 {
+	background-position: -110px -100px;
+}
+
 .rights {
 	width: 960px;
 	display: -webkit-flex;
