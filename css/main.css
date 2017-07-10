@@ -1,14 +1,11 @@
 body {
 	margin: 0; padding: 0;
-	/*font-family: 'Rokkitt', serif;
-	font-family: 'Quicksand', sans-serif;*/
 	font-family: 'Raleway', sans-serif;
 }
 
 header {
 	height: 500px;
 	background-image: url(../img/head-banner.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 	color: #fff;
 }
@@ -17,10 +14,6 @@ header {
 	width: 960px;
 	margin: 0 auto;
 	padding-top: 55px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 	text-transform: uppercase;
@@ -79,8 +72,6 @@ header {
 	width: 206px; height: 59px;
 	background-color: #9b59b6;
 	border: 6px solid rgba(155, 89, 182, .5);
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 	font-family: 'Rokkitt', serif;
 	font-size: 24px;
@@ -189,8 +180,6 @@ header {
 	width: 52px; height: 52px;
 	background: #9b59b6 url(../img/sprite.png) 12px -66px no-repeat;
 	border: 6px solid rgba(155, 89, 182, .5);
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 	transition: top .3s ease-out;
 }
@@ -208,8 +197,6 @@ header {
 	width: 400px; height: 96px;
 	background-color: #9b59b6;
 	border-top: 6px solid rgba(155, 89, 182, .5);
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 	transition: bottom .3s ease-out;
 }
@@ -234,8 +221,6 @@ header {
 	margin: 75px auto 0;
 	padding-left: 20px;
 	background: #9b59b6 url(../img/sprite.png) 170px -105px no-repeat;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 	border: 6px solid transparent;
 	font: normal 24px 'Rokkitt', serif;
@@ -288,10 +273,6 @@ footer {
 	background-color: #9b59b6;
 }
 .social {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 	width: 768px;
@@ -300,6 +281,7 @@ footer {
 	margin: 0 auto;
 }
 .social--item1, .social--item2, .social--item3 {
+	display: block;
 	width: 100px; height: 100px;
 	background: url(../img/sprite.png) -220px 0;
 }
@@ -312,10 +294,6 @@ footer {
 
 .rights {
 	width: 960px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
